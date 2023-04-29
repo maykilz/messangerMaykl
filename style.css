@@ -1,0 +1,100 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: #f2efdc ;
+  overflow: hidden;
+}
+input[type="text"] {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid red;
+}
+input {
+  border-radius: 5px;
+}
+
+button[type="submit"], .CreateNewRoom , .EnterRoom{
+  background: #629362;
+  border: none;
+  width: 180px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700; 
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.CreateNewRoom, .EnterRoom {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.centering {
+  width: 499px;
+  flex-grow: 1;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.roomlist {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.roomitem:nth-child(2) {
+  margin-left: 20px;
+}
+ 
+h1 {
+  text-align: center;
+}
+
+
+.RoomCreateBlock {
+  position: relative;
+}
+
+.generationNumberRoom {
+  position: absolute;
+  right: 2px;
+  top: 6px;
+  display: block;
+  background: #fff;
+  height: 22px;
+  text-decoration: none;
+  color: #000;
+  padding-top: 3px;
+}
+#div_for_checkBox{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 780px) {
+  .roomlist {
+    flex-direction: column;
+    align-items: center;
+  }
+  .roomitem:nth-child(2){ 
+    margin: 0px;
+     margin-top: 50px;
+  }
+  .centering {
+   width: 100%; 
+  } 
+}
+
+.imgMessage {
+  width: 100%;
+}
+*  {
+  outline: none;
+}
